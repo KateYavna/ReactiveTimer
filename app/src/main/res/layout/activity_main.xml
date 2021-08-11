@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wall"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/wall"
+        android:text="@string/btStart"
+        android:textColor="@color/pink"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="@+id/etSeconds"
+        app:layout_constraintStart_toStartOf="@+id/etMinutes"
+        app:layout_constraintTop_toBottomOf="@+id/etMinutes" />
+
+    <EditText
+        android:id="@+id/etMinutes"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginLeft="132dp"
+        android:layout_marginTop="312dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="@string/etMinutes"
+        android:inputType="number"
+        android:textColor="@color/pink"
+        android:textColorHint="@color/pink"
+        android:imeOptions="actionDone"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etSeconds"
+        android:layout_width="68dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:hint="@string/etSeconds"
+        android:textColorHint="@color/pink"
+        android:gravity="center"
+        android:inputType="number"
+        android:textSize="30sp"
+        android:textColor="@color/pink"
+        android:imeOptions="actionDone"
+        app:layout_constraintStart_toEndOf="@+id/etMinutes"
+        app:layout_constraintTop_toTopOf="@+id/etMinutes" />
+</androidx.constraintlayout.widget.ConstraintLayout>
